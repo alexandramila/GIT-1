@@ -4,9 +4,8 @@ public class Dev1 {
 	    if (n % 3 == 0) {
 	        System.out.println("3*" + n/3);
 	    } else {
-	        System.out.printl(n);
+	        System.out.println(n);
 	    }
 	}
-	return;
     }
 }
