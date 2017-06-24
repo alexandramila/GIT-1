@@ -10,7 +10,7 @@ public class Fibonacci {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a positive number to 2147483647: ");
     int number = input.nextInt();
-    if (number > 0 && number <= MaxNumb) {
+    if (number >= 0 && number <= MaxNumb) {
       while (FibNumber < number) {
         FibNumber = Math.round(Math.pow(GoldenRatio, i) / sqrt5);
         i++;
