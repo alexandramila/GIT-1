@@ -5,7 +5,6 @@ public class Sequence {
     boolean test = true; 
     Scanner input = new Scanner(System.in);
     System.out.println("Enter numerical sequence /please use space while entering/:");
-    с
     String gaps[] = s.split(" "); 	
     int seq[] = new int[gaps.length];  
     try {
