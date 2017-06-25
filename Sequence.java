@@ -12,13 +12,13 @@ public class Sequence {
       if (seq[i] >= seq[i-1]) {
         test = true;
       } else {
-        System.out.println("Your numerical sequence is decreasing.");
         test = false;
         break;
       }
-    } 
-    if (test == true) {
+    } if (test == true) {
       System.out.println("Your numerical sequence is non-decreasing.");
-    }		
+    }	else {
+      System.out.println("Your numerical sequence is decreasing.");
+    }
   }
 }
