@@ -17,7 +17,7 @@ public class Sequence {
       }
     } if (test == true) {
       System.out.println("Your numerical sequence is non-decreasing.");
-    }	else {
+    } else {
       System.out.println("Your numerical sequence is decreasing.");
     }
   }
