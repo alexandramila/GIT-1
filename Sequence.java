@@ -15,8 +15,8 @@ public class Sequence {
       }
       System.out.println("Your numerical sequence is non-decreasing.");
     } catch (Exception e) {
-        System.out.println("You've entered invalid number format.");
-        return;
-      }
+      System.out.println("You've entered invalid number format.");
+      return;
+    }
   }
 }
