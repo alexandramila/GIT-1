@@ -13,6 +13,10 @@ public class Sequence {
     }
   }
   
+/**
+ * Determines whether the sequence is non-decreasing,
+ * and displays the result on the screen.
+ */
   public static void checkNondecreasing(String[] gaps) {
     try {
       for (int i = 1; i < gaps.length; i++) {
