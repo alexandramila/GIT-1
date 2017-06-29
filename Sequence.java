@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class Sequence {
   public static void main(String[] args) {
     ReadFromConsole read = new ReadFromConsole();
+    CheckSequence check = new CheckSequence();
     if (read.read(args)) {
+      check.checkNondecreasing(args);
     } else {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Enter numerical sequence /please use space while entering/:");
       String s = scanner.nextLine();
       String gaps[] = s.split(" ");
-      CheckSequence checking = new CheckSequence();
-      checking.checkNondecreasing(gaps);
+      check.checkNondecreasing(gaps);
     }
   }
 }
 
 /**
  * Reads data entered by a user from a console.
- * If the user entered some data then call checking method.
  * @param args   the data that was entered by the user
  *               in the console
  * @return true  when the data has been entered
@@ -25,9 +25,7 @@ public class Sequence {
  */
 class ReadFromConsole {
   public static boolean read(String[] args) {
-    CheckSequence check = new CheckSequence();
     if (args.length != 0) {
-      check.checkNondecreasing(args);
       return true;
     } else {
       return false;
