@@ -2,23 +2,38 @@ import java.util.Scanner;
 
 public class Sequence {
   public static void main(String[] args) {
-    if (args.length != 0) {
-      checkNondecreasing(args);
+    ReadFromConsole read = new ReadFromConsole();
+    if (read.read(args)) {
     } else {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Enter numerical sequence /please use space while entering/:");
       String s = scanner.nextLine();
       String gaps[] = s.split(" ");
-      checkNondecreasing(gaps);
+      CheckSequence checking = new CheckSequence();
+      checking.checkNondecreasing(gaps);
     }
   }
-  
+}
+
+class ReadFromConsole {
+  public static boolean read(String[] args) {
+    CheckSequence check = new CheckSequence();
+    if (args.length != 0) {
+      check.checkNondecreasing(args);
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
 /**
  * Determines whether the sequence is non-decreasing,
  * and displays the result on the screen.
  * @param gaps the sequence that was entered by a user
  *             and that must be checked.
  */
+class CheckSequence {
   public static void checkNondecreasing(String[] gaps) {
     try {
       for (int i = 1; i < gaps.length; i++) {
