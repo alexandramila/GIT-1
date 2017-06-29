@@ -16,8 +16,8 @@ public class Sequence {
 /**
  * Determines whether the sequence is non-decreasing,
  * and displays the result on the screen.
- * The gaps argument is the sequence that was entered by a user
- * and that must be checked.
+ * @param gaps the sequence that was entered by a user
+ *             and that must be checked.
  */
   public static void checkNondecreasing(String[] gaps) {
     try {
