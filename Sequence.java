@@ -15,6 +15,14 @@ public class Sequence {
   }
 }
 
+/**
+ * Reads data entered by a user from a console.
+ * If the user entered some data then call checking method.
+ * @param args   the data that was entered by the user
+ *               in the console
+ * @return true  when the data has been entered
+ * @return false when the user didn't entered the data in the console  
+ */
 class ReadFromConsole {
   public static boolean read(String[] args) {
     CheckSequence check = new CheckSequence();
@@ -30,7 +38,7 @@ class ReadFromConsole {
 /**
  * Determines whether the sequence is non-decreasing,
  * and displays the result on the screen.
- * @param gaps the sequence that was entered by a user
+ * @param gaps the sequence that was entered by the user
  *             and that must be checked.
  */
 class CheckSequence {
