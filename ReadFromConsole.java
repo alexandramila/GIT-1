@@ -9,7 +9,7 @@ class ReadFromConsole {
  * @return true  when the data has been entered
  * @return false when the user didn't entered the data in the console  
  */
-  public static boolean read(String[] args) {
+  public boolean read(String[] args) {
     if (args.length != 0) {
       return true;
     } else {
