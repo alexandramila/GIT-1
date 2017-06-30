@@ -8,7 +8,7 @@ class CheckSequence {
  * @param gaps the sequence that was entered by the user
  *             and that must be checked.
  */
-  public static void checkNondecreasing(String[] gaps) {
+  public void checkNondecreasing(String[] gaps) {
     try {
       for (int i = 1; i < gaps.length; i++) {
         if (Integer.parseInt(gaps[i]) < Integer.parseInt(gaps[i-1])) {
