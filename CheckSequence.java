@@ -1,10 +1,13 @@
 /**
+ * Analyzes the sequence that was entered by the user.
+ */
+class CheckSequence {
+/**
  * Determines whether the sequence is non-decreasing,
  * and displays the result on the screen.
  * @param gaps the sequence that was entered by the user
  *             and that must be checked.
  */
-class CheckSequence {
   public static void checkNondecreasing(String[] gaps) {
     try {
       for (int i = 1; i < gaps.length; i++) {
