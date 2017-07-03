@@ -5,7 +5,8 @@ class CheckSequence {
 /**
  * Determines whether the sequence is non-decreasing,
  * and displays the result on the screen.
- *
+ * @param gaps the sequence that was entered by the user
+ *             and that must be checked.
  */
   public void checkNondecreasing(String[] gaps) {
     try {
