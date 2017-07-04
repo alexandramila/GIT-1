@@ -8,7 +8,7 @@ class CommandLineArguments {
    *               in the command line
    * @return the sequance  
    */
-  public String[] sequenceCommandLine(String[] args) {
+  public String[] sequenceCommandLine(String[] args) {  // to do - divided into two methods
     if (args.length != 0) {
       return args;
     } else {
