@@ -4,7 +4,7 @@ public class Sequence {
   public static void main(String[] args) {
     ReadFromConsole read = new ReadFromConsole();
     CheckSequence check = new CheckSequence();
-    if (read.read(args)) {
+    if (read.readSequence(args)) {
       check.checkNondecreasing(args);
     } else {
       Scanner scanner = new Scanner(System.in);
