@@ -1,19 +1,18 @@
+import java.util.Scanner;
+
 /**
  * Reads data entered by a user from a console.
  */
 class ReadFromConsole {
-   /**
-   * Checks if data has been entered via the console.
-   * @param args   the data that was entered by the user
-   *               in the console
-   * @return true  when the data has been entered
-   *         false when the user didn't entered the data in the console  
+  /**
+   * Reads the data from the console.
+   * @return the sequance
    */
-  public boolean readSequence(String[] args) {
-    if (args.length != 0) {
-      return true;
-    } else {
-      return false;
-    }
+  public String[] readSequenceConsole() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter numerical sequence /please use space while entering/:");
+    String s = scanner.nextLine();
+    String gaps[] = s.split(" ");
+    return gaps;
   }
 }
