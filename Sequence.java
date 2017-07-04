@@ -1,9 +1,9 @@
 public class Sequence {
   public static void main(String[] args) {
-    ReadFromCommandLine read = new ReadFromCommandLine();
+    CommandLineArguments read = new CommandLineArguments();
     CheckSequence check = new CheckSequence();
     try {
-      if (check.checkNondecreasing(read.readSequenceCommandLine(args))) {
+      if (check.checkNondecreasing(read.sequenceCommandLine(args))) {
         System.out.println("Your numerical sequence is non-decreasing.");
       } else {
         System.out.println("Your numerical sequence is not non-decreasing.");
