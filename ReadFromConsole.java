@@ -13,6 +13,6 @@ class ReadFromConsole {
     System.out.println("Enter numerical sequence /please use space while entering/:");
     String s = scanner.nextLine();
     String gaps[] = s.split(" ");
-    return gaps;
+    return s.split(" ");
   }
 }
