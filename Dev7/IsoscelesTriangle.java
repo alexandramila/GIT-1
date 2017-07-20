@@ -2,6 +2,11 @@
  * Extends from Triangle, creates an isosceles triangle if it exists.
  */
 public class IsoscelesTriangle extends Triangle {
+  /**
+   * Constructor for this class.
+   * @throws gives an exception if the sides of the triangle
+   *         do not conform to the rules for constructing an isosceles triangle
+   */
   public IsoscelesTriangle(double[] sides) {
     super(sides);
     if (!checkIsosceles(sides)) {

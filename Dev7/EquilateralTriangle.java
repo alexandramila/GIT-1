@@ -2,6 +2,11 @@
  * Extends from Triangle, creates an equilateral triangle if it exists.
  */
 public class EquilateralTriangle extends Triangle {
+  /**
+   * Constructor for this class.
+   * @throws gives an exception if the sides of the triangle
+   *         do not conform to the rules for constructing an equilateral triangle
+   */
   public EquilateralTriangle(double[] sides) {
     super(sides);
     if (!checkEquilateral(sides)) {

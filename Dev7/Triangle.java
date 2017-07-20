@@ -16,6 +16,8 @@ public class Triangle {
   /**
    * Checks if the triangle exists.
    * @param sides the sides of the triangle
+   * @throws gives an exception if the sides of the triangle
+   *         do not conform to the rules for constructing a triangle
    */
   public void checkForExistence(double[] sides) {
     if (Double.compare(sides[0], 0) <= 0 ||

@@ -2,6 +2,11 @@
  * Extends from Triangle, creates a normal triangle if it exists.
  */
 public class NormalTriangle extends Triangle {
+  /**
+   * Constructor for this class.
+   * @throws gives an exception if the sides of the triangle
+   *         do not conform to the rules for constructing a normal triangle
+   */
   public NormalTriangle(double[] sides) {
     super(sides);
     if (!checkNormal(sides)) {
