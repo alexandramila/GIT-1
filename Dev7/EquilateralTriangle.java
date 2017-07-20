@@ -1,5 +1,5 @@
 /**
- * Extends from Triangle, creates an equilateral triangle if it exists.
+ * Extends from Triangle, represents an equilateral triangle.
  */
 public class EquilateralTriangle extends Triangle {
   /**

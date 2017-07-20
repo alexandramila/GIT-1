@@ -1,5 +1,5 @@
 /**
- * Extends from Triangle, creates an isosceles triangle if it exists.
+ * Extends from Triangle, represents an isosceles triangle.
  */
 public class IsoscelesTriangle extends Triangle {
   /**

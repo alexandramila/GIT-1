@@ -1,7 +1,7 @@
 import java.lang.Double;
 
 /**
- * Creates the triangle if it exists.
+ * Represents the triangle.
  */
 public class Triangle {
   private double[] sides = new double[3];

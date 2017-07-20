@@ -1,5 +1,5 @@
 /**
- * Extends from Triangle, creates a normal triangle if it exists.
+ * Extends from Triangle, represents a normal triangle.
  */
 public class NormalTriangle extends Triangle {
   /**
