@@ -9,7 +9,7 @@ public class NormalTriangle extends Triangle {
    */
   public NormalTriangle(double[] sides) {
     super(sides);
-    if (!checkNormal(sides)) {
+    if (!isNormal(sides)) {
       throw new IllegalArgumentException("This triangle is not normal.");
     }
   }
@@ -20,7 +20,7 @@ public class NormalTriangle extends Triangle {
    * @return true  if the triangle is normal
    *         false if the triangle is not normal
    */
-  public boolean checkNormal(double[] sides) {
+  public boolean isNormal(double[] sides) {
     if (Double.compare(sides[0], sides[1]) != 0 &&
         Double.compare(sides[1], sides[2]) != 0 &&
         Double.compare(sides[0], sides[2]) != 0) {

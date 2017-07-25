@@ -9,7 +9,7 @@ public class EquilateralTriangle extends Triangle {
    */
   public EquilateralTriangle(double[] sides) {
     super(sides);
-    if (!checkEquilateral(sides)) {
+    if (!isEquilateral(sides)) {
       throw new IllegalArgumentException("This triangle is not equilateral.");
     }
   }
@@ -20,7 +20,7 @@ public class EquilateralTriangle extends Triangle {
    * @return true  if the triangle is equilateral
    *         false if the triangle is not equilateral
    */
-  public boolean checkEquilateral(double[] sides) { 
+  public boolean isEquilateral(double[] sides) { 
     if (Double.compare(sides[0], sides[1]) == 0 &&
         Double.compare(sides[1], sides[2]) == 0) {
       return true;

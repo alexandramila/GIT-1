@@ -9,7 +9,7 @@ public class IsoscelesTriangle extends Triangle {
    */
   public IsoscelesTriangle(double[] sides) {
     super(sides);
-    if (!checkIsosceles(sides)) {
+    if (!isIsosceles(sides)) {
       throw new IllegalArgumentException("This triangle is not isosceles.");
     }
   }
@@ -20,7 +20,7 @@ public class IsoscelesTriangle extends Triangle {
    * @return true  if the triangle is isosceles
    *         false if the triangle is not isosceles
    */
-  public boolean checkIsosceles(double[] sides) {
+  public boolean isIsosceles(double[] sides) {
     if (Double.compare(sides[0], sides[1]) == 0 ||
         Double.compare(sides[1], sides[2]) == 0 ||
         Double.compare(sides[0], sides[2]) == 0) {
