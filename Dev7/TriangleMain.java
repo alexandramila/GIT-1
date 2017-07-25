@@ -4,13 +4,13 @@ public class TriangleMain {
   public static void main(String[] args) {
     InputSides input = new InputSides();
     double[] array = input.inputSides();
-    Triangle triangle = new Triangle(array);
     try {
       EquilateralTriangle equilateral = new EquilateralTriangle(array);
       System.out.println("This triangle is equilateral.");
       return;
     } catch (IllegalArgumentException e) {
       System.out.println(e.getMessage());
+      System.exit(1);
     }
     try {
       IsoscelesTriangle isosceles = new IsoscelesTriangle(array);
@@ -18,6 +18,7 @@ public class TriangleMain {
       return;
     } catch (IllegalArgumentException e) {
       System.out.println(e.getMessage());
+      System.exit(1);
     }
     try {
       NormalTriangle normal = new NormalTriangle(array);
