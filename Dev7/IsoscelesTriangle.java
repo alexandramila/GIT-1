@@ -28,4 +28,11 @@ public class IsoscelesTriangle extends Triangle {
     }
     return false;
   }
+
+  /**
+   * @return string "Isosceles".
+   */
+  public String toString() {
+    return "Isosceles ";
+  }
 }

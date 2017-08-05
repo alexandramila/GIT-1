@@ -1,7 +1,7 @@
 import java.lang.Double;
 
 /**
- * Represents the triangle.
+ * Creates the triangle if it exists.
  */
 public class Triangle {
   private double[] sides = new double[3];
@@ -16,18 +16,16 @@ public class Triangle {
   /**
    * Checks if the triangle exists.
    * @param sides the sides of the triangle
-   * @throws gives an exception if the sides of the triangle
-   *         do not conform to the rules for constructing a triangle
    */
   public void checkForExistence(double[] sides) {
     if (Double.compare(sides[0], 0) <= 0 ||
         Double.compare(sides[1], 0) <= 0 ||
         Double.compare(sides[2], 0) <= 0) {
       throw new IllegalArgumentException("Can not create a triangle with side that equals to 0.");
-    } else if (Double.compare(sides[0], sides[1] + sides[2]) > 0 || 
-               Double.compare(sides[1], sides[0] + sides[2]) > 0 ||
-               Double.compare(sides[2], sides[0] + sides[1]) > 0) {
-      throw new IllegalArgumentException("Can not create a triangle.");
+    } else if (Double.compare(sides[0], sides[1] + sides[2]) >= 0 || 
+               Double.compare(sides[1], sides[0] + sides[2]) >= 0 ||
+               Double.compare(sides[2], sides[0] + sides[1]) >= 0) {
+      throw new IllegalArgumentException("Can not create a triangle with these sides.");
     }
   }
 }

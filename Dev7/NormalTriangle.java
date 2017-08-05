@@ -28,4 +28,11 @@ public class NormalTriangle extends Triangle {
     }
     return false;
   }
+
+  /**
+   * @return returns string "Normal".
+   */
+  public String toString() {
+    return "Normal ";
+  }
 }

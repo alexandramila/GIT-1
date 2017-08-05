@@ -27,4 +27,11 @@ public class EquilateralTriangle extends Triangle {
     }
     return false;
   }
+
+  /**
+   * @return string "Equilateral".
+   */
+  public String toString() {
+    return "Equilateral ";
+  }
 }
