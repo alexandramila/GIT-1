@@ -1,6 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-    String[] array = {"sweet", "APPLE"};
+    String[] array = {"sweet", "APPLE"}; //to do - read from the console
     StringsReplacer replacer = new StringsReplacer();
     try {
       System.out.println("First sequence: " + array[0]);
