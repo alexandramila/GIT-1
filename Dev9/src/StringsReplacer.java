@@ -1,5 +1,9 @@
 import java.util.Random;
 
+/**
+ * This class selects one random part from the second string to put it
+ * in a random place in the first string
+ */
 public class StringsReplacer {
 
   /**
