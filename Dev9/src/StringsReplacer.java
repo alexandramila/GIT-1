@@ -6,7 +6,7 @@ public class StringsReplacer {
    * Picks random places in sequences
    *
    * @param array is strings that will be changed
-   * @return result changing from another method
+   * @return the result from another method
    */
   public String picksRandomPlaces(String[] array) {
     if (array.length != 2) {
