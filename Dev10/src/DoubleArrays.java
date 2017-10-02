@@ -13,9 +13,9 @@ public class DoubleArrays {
    */
   public double[][] initialize() {
     Random random = new Random();
-    double[][] arrays = new double[random.nextInt(5)][];
-    for (int i = 0; i < 6; i++) {
-      arrays[i] = new double[random.nextInt(5)];
+    double[][] arrays = new double[random.nextInt(11)][];
+    for (int i = 0; i < arrays.length; i++) {
+      arrays[i] = new double[random.nextInt(11)];
       for (int j = 0; j < arrays[i].length; j++) {
         arrays[i][j] = random.nextDouble() * (random.nextInt(41) - 20);
       }
