@@ -10,11 +10,13 @@ public class Main {
       cyrillicLatinDictionary = dictionary.createDictionary("C:\\Users\\alexa\\IdeaProjects\\Dev11\\src\\cyrillicToLatin.txt");
       HashMap latinCyrillicDictionary = new HashMap();
       latinCyrillicDictionary = dictionary.createDictionary("C:\\Users\\alexa\\IdeaProjects\\Dev11\\src\\latinToCyrillic.txt");
-      String rus = "Р’ РѕР¶РёРґР°РЅРёРё С‡СѓРґР°. РќР°РґРµСЋСЃСЊ, РјРЅРµ РїРѕРІРµР·С‘С‚.";
+      String rus = "В ожидании чуда. Надеюсь, мне повезёт.";
       System.out.println(rus);
       Transliterator transliterator = new Transliterator();
-      System.out.println(transliterator.translit(rus,cyrillicLatinDictionary ));
-
+      String rusToLatin = transliterator.translit(rus,cyrillicLatinDictionary);
+      System.out.println(rusToLatin);
+      String latinToRus = transliterator.translit(rusToLatin,latinCyrillicDictionary);
+      System.out.println(latinToRus);
     } catch (Exception e) {
       e.printStackTrace();
     }
