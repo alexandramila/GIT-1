@@ -10,7 +10,7 @@ public class Main {
       cyrillicLatinDictionary = dictionary.createDictionary("C:\\Users\\alexa\\IdeaProjects\\Dev11\\src\\cyrillicToLatin.txt");
       HashMap latinCyrillicDictionary = new HashMap();
       latinCyrillicDictionary = dictionary.createDictionary("C:\\Users\\alexa\\IdeaProjects\\Dev11\\src\\latinToCyrillic.txt");
-      String rus = "В ожидании чуда. Надеюсь, мне повезёт.";
+      String rus = "Р’ РѕР¶РёРґР°РЅРёРё С‡СѓРґР°. РќР°РґРµСЋСЃСЊ, РјРЅРµ РїРѕРІРµР·С‘С‚.";
       System.out.println(rus);
       Transliterator transliterator = new Transliterator();
       String rusToLatin = transliterator.translit(rus,cyrillicLatinDictionary);
