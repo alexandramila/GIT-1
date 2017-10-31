@@ -4,8 +4,9 @@
 public class EquilateralTriangle extends Triangle {
   /**
    * Constructor for this class.
-   * @throws gives an exception if the sides of the triangle
-   *         do not conform to the rules for constructing an equilateral triangle
+   *
+   * @throws throws an exception if the sides of the triangle
+   *                do not conform to the rules for constructing an equilateral triangle
    */
   public EquilateralTriangle(double[] sides) {
     super(sides);
@@ -16,13 +17,14 @@ public class EquilateralTriangle extends Triangle {
 
   /**
    * Checks whether the triangle is equilateral.
-   * @param sides  the sides of the triangle
+   *
+   * @param sides the sides of the triangle
    * @return true  if the triangle is equilateral
-   *         false if the triangle is not equilateral
+   * false if the triangle is not equilateral
    */
-  public boolean isEquilateral(double[] sides) { 
+  public boolean isEquilateral(double[] sides) {
     if (Double.compare(sides[0], sides[1]) == 0 &&
-        Double.compare(sides[1], sides[2]) == 0) {
+            Double.compare(sides[1], sides[2]) == 0) {
       return true;
     }
     return false;

@@ -3,12 +3,14 @@
  */
 abstract class Builder {
   Builder next;
+
   public Builder(Builder next) {
     this.next = next;
   }
 
   /**
    * Returns object of the class Triangle.
+   *
    * @param sides sides of the triangle
    * @return object of the class Triangle
    */
@@ -16,6 +18,7 @@ abstract class Builder {
 
   /**
    * Checks the type of the entered triangle.
+   *
    * @param sides sides of the triangle.
    * @return object of the class Triangle.
    */
@@ -24,6 +27,7 @@ abstract class Builder {
     try {
       triangle = buildTriangle(sides);
     } catch (IllegalArgumentException e) {
+      System.out.println(e.getMessage());
       if (next != null) {
         triangle = next.build(sides);
       }

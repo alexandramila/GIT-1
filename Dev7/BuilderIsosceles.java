@@ -9,6 +9,7 @@ public class BuilderIsosceles extends Builder {
 
   /**
    * Returns object of the class IsoscelesTriangle.
+   *
    * @param sides sides of the triangle
    * @return object of the class IsoscelesTriangle
    */

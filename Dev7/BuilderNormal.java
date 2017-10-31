@@ -9,6 +9,7 @@ public class BuilderNormal extends Builder {
 
   /**
    * Returns object of the class NormalTriangle.
+   *
    * @param sides sides of the triangle
    * @return object of the class NormalTriangle
    */
