@@ -45,7 +45,7 @@ public class SecondCriterion extends Criterion {
       }
     }
     if (fixedAmount < 0 && fixedProductivity != 0) {
-      System.out.println("Sorry, we cannot help you");
+      System.out.println("Sorry, we can not complete your task.");
     } else {
       StringBuilder out = new StringBuilder();
       out.append(sorted[0].getName()).append(" ");

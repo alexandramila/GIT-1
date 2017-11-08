@@ -20,7 +20,7 @@ public class ThirdCriterion extends Criterion {
     int countLead = 0;
     Worker[] sorted = sortByProductivity();
     if (fixedAmount < sorted[3].getSalary()) {
-      System.out.println("Sorry, we cannot help you");
+      System.out.println("Sorry, we can not complete your task.");
     }
     while (fixedAmount >= sorted[3].getSalary()) {
       fixedAmount -= sorted[3].getSalary();
@@ -28,7 +28,7 @@ public class ThirdCriterion extends Criterion {
       countLead++;
     }
     if (fixedProductivity != 0) {
-      System.out.println("Sorry, we cannot help you");
+      System.out.println("Sorry, we can not complete your task.");
     }
     StringBuilder out = new StringBuilder();
     out.append(sorted[0].getName()).append(" ");
