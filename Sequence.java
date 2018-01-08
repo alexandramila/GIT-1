@@ -1,4 +1,5 @@
 public class Sequence {
+
   public static void main(String[] args) {
     CommandLineArguments read = new CommandLineArguments();
     CheckSequence check = new CheckSequence();
