@@ -8,7 +8,6 @@ public class Sequence {
       } else {
         System.out.println("Your numerical sequence is not non-decreasing.");
       }
-      return;
     } catch (Exception e) {
       System.out.println("You've entered invalid number format.");
     }

@@ -4,8 +4,10 @@ import java.util.Scanner;
  * Reads data entered by a user from a console.
  */
 class ReadFromConsole {
+
   /**
    * Reads the data from the console.
+   *
    * @return the sequance
    */
   public String[] readSequenceConsole() {
